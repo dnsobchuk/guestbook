@@ -1,4 +1,4 @@
-
-database:
+dbpostgres:
     type: postgresql:13
     disk: 1024
+    size: S
