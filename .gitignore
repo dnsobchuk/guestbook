@@ -8,8 +8,8 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-/.idea
-/.vscode
+/.idea/
+/.vscode/
 /public/uploads
 ###> symfony/phpunit-bridge ###
 .phpunit.result.cache
