@@ -12,6 +12,9 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Comment
 {
+    const STATE_SPAM = 'spam';
+    const STATE_PUBLISHED = 'published';
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
