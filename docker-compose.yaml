@@ -14,7 +14,12 @@ services:
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
   ###< doctrine/doctrine-bundle ###
-
+  redis:
+    image: redis:6.2.6-alpine
+    ports: [6379]
+  rabbitmq:
+    image: rabbitmq:3.9.12-management
+    ports: [5672, 15672]
 volumes:
 ###> doctrine/doctrine-bundle ###
   db-data:
