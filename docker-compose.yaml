@@ -20,6 +20,10 @@ services:
   rabbitmq:
     image: rabbitmq:3.9.12-management
     ports: [5672, 15672]
+  mailcatcher:
+    image:
+      schickling/mailcatcher
+    ports: [1025, 1080]
 volumes:
 ###> doctrine/doctrine-bundle ###
   db-data:
